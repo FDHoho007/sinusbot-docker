@@ -58,6 +58,9 @@ EOT
 	curl -s -L -o /usr/local/bin/yt-dlp https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp
 	chmod 755 /usr/local/bin/yt-dlp
 	echo 'YoutubeDLPath = "/usr/local/bin/yt-dlp"' >> config.ini.configured
+	mkdir -p /root/.cache/yt-dlp
+	chmod 777 /root/.cache/yt-dlp
+	chmod +x /root
 	echo "Successfully installed yt-dlp"
 	;;
 "teamspeak")

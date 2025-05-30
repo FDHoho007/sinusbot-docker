@@ -1,7 +1,7 @@
-FROM sinusbot/docker:1.0.2-discord
+FROM ghcr.io/fdhoho007/sinusbot-docker:1.0.2.1-discord
 
 LABEL description="SinusBot - TeamSpeak 3 and Discord music bot."
-LABEL version="1.0.2"
+LABEL version="1.0.2.1"
 
 # Install dependencies and clean up afterwards
 RUN apt-get update && \
